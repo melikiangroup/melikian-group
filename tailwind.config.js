@@ -6,18 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        stone: {
-          950: '#0c0a09',
-        }
-      },
       fontFamily: {
-        serif: ['Times New Roman', 'Didot', 'Bodoni MT', 'serif'],
-        sans: ['Arial', 'Helvetica', 'sans-serif'],
+        serif: ['var(--font-serif)', 'serif'],
+        sans: ['var(--font-sans)', 'sans-serif'],
       },
       letterSpacing: {
+        tightest: '-0.05em',
         widest: '0.3em',
-        extreme: '0.5em',
+        extreme: '0.6em',
       }
     },
   },
